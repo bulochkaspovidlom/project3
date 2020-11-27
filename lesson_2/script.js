@@ -46,13 +46,42 @@ try {
 
 /* task_4 */
 
-var random = Math.round(Math.random() * 15);
+let random = Math.round(Math.random() * 15);
 alert("рандомное число: " + random);
+
+/* task_5 */
+// Не совсем понятно условие задачи, организовать вывод от 0 до 15?
+// тогда вот
+
+let int_1 = 15;
+while (int_1 >= 0) {
+  switch (int_1) {
+    case 15:
+    case 14:
+    case 13:
+    case 12:
+    case 11:
+    case 10:
+    case 9:
+    case 8:
+    case 7:
+    case 6:
+    case 5:
+    case 4:
+    case 3:
+    case 2:
+    case 1:
+    case 0:
+      alert(int_1);
+      break;
+  }
+  int_1--;
+}
 
 /* task_6 */
 
 function mathOperation(arg1, arg2, operation) {
-  var result;
+  let result;
   switch (String(operation)) {
     case 'разность':
       result = arg1 - arg2;
@@ -65,4 +94,13 @@ function mathOperation(arg1, arg2, operation) {
       break;
   }
   return result;
+}
+
+/* task_7 */
+
+let int_2 = null;
+let int_3 = 0;
+
+if (int_2 == int_3) {
+  alert("Этот алерт никогда не будет выведен, тк  null - это отсутствие какого-либо значение, хоть и по условия отдает false, в то время как 0 - это число, но так же отдает false, но так же как оказывается, они разные по типу. Полее подробно и хорошо описано в статье.");
 }
