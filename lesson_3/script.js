@@ -11,16 +11,16 @@ nextNum: for (let i = 2; i <= num_1; i++) {
 console.log("======================== task 2 and task 3 ========================");
 
 let cart = [{
-    "name": "iphone_12",
-    "price": 2000
+    name: "iphone_12",
+    price: 2000
   },
   {
-    "name": "watch",
-    "price": 500
+    name: "watch",
+    price: 500
   },
   {
-    "name": "air_pods",
-    "price": 800
+    name: "air_pods",
+    price: 800
   }
 ];
 
@@ -28,11 +28,7 @@ let totalPrice = countBasketPrice(cart);
 console.log("total cart price is: " + totalPrice + "$");
 
 function countBasketPrice(arr) {
-  let result = 0;
-  arr.forEach((item, i) => {
-    result += item.price;
-  });
-  return result;
+  return arr.reduce((acc, item) => acc + item.price, 0);
 }
 
 console.log("======================== task 4 ========================");
