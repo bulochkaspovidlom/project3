@@ -1,0 +1,85 @@
+.wrapper {
+  width: 1140px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  height: 800px;
+  width: inherit;
+  display: inherit;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#content-menu {
+  height: 50px;
+  width: inherit;
+  display: inherit;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+#content-data {
+  height: 750px;
+  width: inherit;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  height: 30px;
+  width: 100px;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ccc;
+}
+
+.button:hover a {
+  color: #fff;
+}
+
+.button a {
+  text-decoration: none;
+  color: #a3a3a3;
+}
+
+.chess-col-title {
+  background-color: #a9a9a9;
+  width: 40px !important;
+}
+
+.chess-row-title {
+  background-color: #a9a9a9;
+  height: 40px !important;
+}
+
+.chess-row {
+  display: flex;
+  height: 80px;
+}
+
+.chess-col {
+  padding: 5px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chess-col span {
+  color: #fff;
+  font-size: 20px;
+}
